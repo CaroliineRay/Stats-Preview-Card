@@ -24,7 +24,7 @@ body {
 }
 
 .main-container {
-    width: 80%; /* probable need to change the width to % */
+    width: 85vw; /* probable need to change the width to % */
     height: auto; /* probable need to change the height to % */
     background-color: hsl(244, 38%, 16%);
     border-radius: 10px;
