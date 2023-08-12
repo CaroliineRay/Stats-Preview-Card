@@ -116,10 +116,6 @@ p {
 
 @media screen and (min-width: 1024px) { 
 
-    body {
-        background-color: antiquewhite;
-    }
-
     .main-container {
         width: 70vw;
         height: auto; 
