@@ -92,7 +92,33 @@ p {
     font-family: 'Lexend Deca', sans-serif;
 }
 
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .main-container {
+        width: 45vw;
+    }
+
+    .text {
+        padding: 20px 30px 0;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+    }
+
+    p {
+        padding-bottom: 10px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) { 
+
+    body {
+        background-color: antiquewhite;
+    }
 
     .main-container {
         width: 70vw;
