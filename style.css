@@ -15,7 +15,6 @@ body {
     background-color:  hsl(233, 47%, 7%);
     padding: 0;
     margin: 0;
-    color: white; /*  this changed the font color*/
     font-family: 'Lexend Deca', sans-serif;
     display: flex;
     justify-content: center;
@@ -165,7 +164,7 @@ p {
 @media screen and (min-width: 1180px) { 
 
     .main-container {
-        width: 70vw;
+        width: 75vw;
         height: 60vh; 
         flex-direction: row-reverse;
         align-items: stretch;
