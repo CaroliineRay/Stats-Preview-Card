@@ -4,10 +4,10 @@
 
 * {
     box-sizing: border-box;
-   /* border: 2px solid pink;*/
+   /*border: 2px solid pink; */
 }
 
-html {
+html, body {
     height: 100%;
 }
 
@@ -17,10 +17,9 @@ body {
     margin: 0;
     color: white; /*  this changed the font color*/
     font-family: 'Lexend Deca', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container {
@@ -30,6 +29,9 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
 }
 
 .img-container {
@@ -59,6 +61,7 @@ body {
 }
 
 .text {
+    align-self: center;
     text-align: center;
     padding: 15px 25px 10px;
 }
@@ -91,8 +94,11 @@ p {
     letter-spacing: 0.5px;
     font-family: 'Lexend Deca', sans-serif;
 }
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+ 
+@media screen and (min-width: 700px) and (max-width: 900px) {
+body {
+        background-color: white;
+    }
 
     .main-container {
         width: 45vw;
@@ -113,12 +119,61 @@ p {
     }
 }
 
+@media screen and (max-width: 1180px) and (min-width: 900px) {
+    body {
+        background-color: antiquewhite;
+    }
 
-@media screen and (min-width: 1024px) { 
+    .main-container {
+        width: 80vw;
+        height: 50vh; 
+        flex-direction: row-reverse;
+        align-items: stretch;
+        justify-content: center;
+    }   
+
+    .img-container {
+        border-top-left-radius: 0;
+        width: 50%;
+    }
+
+    .main-img {
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 10px;
+    }
+
+    .overlay {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+    }
+
+    .text { 
+        width: 50%;
+        padding: 20px 40px;
+        text-align: left;
+    }
+
+    h1 {font-size: 30px;}
+
+    p {
+        padding-left: 0;
+        font-size: 14px;
+    }
+
+    .stats {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (min-width: 1180px) { 
 
     .main-container {
         width: 70vw;
-        height: auto; 
+        height: 60vh; 
         flex-direction: row-reverse;
         align-items: stretch;
         justify-content: center;
@@ -135,6 +190,8 @@ p {
     }
 
     .overlay {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
         border-top-left-radius: 0;
     }
 
