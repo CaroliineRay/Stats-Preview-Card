@@ -31,7 +31,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
 }
 
 .img-container {
@@ -96,9 +95,6 @@ p {
 }
  
 @media screen and (min-width: 700px) and (max-width: 900px) {
-body {
-        background-color: white;
-    }
 
     .main-container {
         width: 45vw;
@@ -120,9 +116,6 @@ body {
 }
 
 @media screen and (max-width: 1180px) and (min-width: 900px) {
-    body {
-        background-color: antiquewhite;
-    }
 
     .main-container {
         width: 80vw;
